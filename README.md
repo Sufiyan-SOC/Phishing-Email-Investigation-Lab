@@ -278,8 +278,8 @@ Phishing-Email-Investigation-Lab/
 
 # 👤 Author
 
-**Your Name**
- Shaikh Sufiyan 
+**Shaikh Sufiyan**
+  
  
 - **LinkedIn:** https://linkedin.com/in/your-profile
 - **GitHub:** https://github.com/your-username
