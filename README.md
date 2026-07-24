@@ -48,6 +48,7 @@ This lab showcases hands-on investigations into four distinct phishing attack ve
 
 ```text
 Phishing-Email-Investigation-Lab/
+Phishing-Email-Investigation-Lab/
 ├── README.md
 ├── Case_01_Header_Analysis_Chase/
 │   ├── Case_01_Report.md
@@ -80,6 +81,11 @@ Phishing-Email-Investigation-Lab/
         ├── 04_terminal_grep_extracted_domain.png
         ├── 05_virustotal_url_detection.png
         └── 06_urlscan_redirection_path.png
+
+
+
+
+
 
 
 
