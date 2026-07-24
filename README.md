@@ -1,6 +1,3 @@
-
-
-```
 # 📁 Investigation Cases
 ## Case 01 – Email Header Analysis (Chase)
 ### Scenario
@@ -104,6 +101,3 @@ View Detailed Case 04 Report
  * **LinkedIn:** [Your LinkedIn Profile URL]
  * **GitHub:** [Your GitHub Profile URL]
  * **Email:** your.email@example.com
-```
-
-```
