@@ -281,9 +281,9 @@ Phishing-Email-Investigation-Lab/
 **Shaikh Sufiyan**
   
  
-- **LinkedIn:** https://linkedin.com/in/your-profile
-- **GitHub:** https://github.com/your-username
-- **Email:** your.email@example.com
+- **LinkedIn:** https://www.linkedin.com/in/shaikh-sufiyan-aab51a3b1
+- **GitHub:** https://github.com/Sufiyan-SOC
+- **Email:**  shaikh.sufiyan.sec@gmail.com
 
 
 
