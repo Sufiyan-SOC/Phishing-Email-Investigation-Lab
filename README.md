@@ -1,48 +1,73 @@
-# Phishing Email Investigation Lab
+🛡️ Phishing Email Investigation Lab
 
-> A comprehensive end-to-end SOC Analyst portfolio analyzing phishing attack vectors including email header spoofing, malicious ISO payloads, social engineering PDFs, and multi-stage credential harvesting URLs.
-
----
-
-## 📌 Project Overview
-
-This repository showcases hands-on phishing investigations performed in a controlled lab environment. Each case follows a Security Operations Center (SOC) investigation workflow, from evidence collection and IOC extraction to threat intelligence correlation, analysis, and documentation.
+«A hands-on SOC Analyst portfolio focused on investigating real-world phishing attacks through email header analysis, malicious attachment analysis, URL investigation, IOC extraction, threat intelligence correlation, and professional incident reporting.»
 
 ---
 
-## 🎯 Objectives
+📌 Overview
 
-- Identify and extract Indicators of Compromise (IOCs) from phishing emails, attachments, and URLs.
-- Analyze email headers to verify sender authenticity and identify spoofing techniques.
-- Investigate malicious attachments using hashing and threat intelligence platforms.
-- Analyze phishing URLs and redirection chains.
-- Document findings using professional SOC-style incident reports.
+This repository demonstrates practical phishing investigations performed in a controlled lab environment. Each investigation follows a structured SOC workflow, from evidence collection to IOC extraction, threat intelligence validation, risk assessment, MITRE ATT&CK mapping, and incident documentation.
+
+The objective is to demonstrate practical skills commonly used by SOC Analysts during phishing investigations.
 
 ---
 
-## 🛠️ Skills Demonstrated
+🎯 Objectives
 
+- Investigate phishing emails using industry-standard SOC methodologies.
+- Analyze email headers to validate sender authenticity.
+- Extract Indicators of Compromise (IOCs).
+- Investigate malicious attachments and phishing URLs.
+- Correlate findings using multiple threat intelligence platforms.
+- Produce professional SOC-style incident reports.
+
+---
+
+💼 Skills Demonstrated
+
+- Phishing Email Investigation
 - Email Header Analysis
-- Phishing Investigation
 - IOC Extraction
-- Threat Intelligence
-- OSINT
-- Digital Forensics
+- Threat Intelligence Analysis
+- OSINT Investigation
+- Static Malware Analysis
+- URL & Domain Investigation
+- Email Authentication (SPF, DKIM, DMARC)
 - MITRE ATT&CK Mapping
-- Incident Report Writing
+- SOC Incident Documentation
 
 ---
 
-## 🧰 Tools Used
+🛠️ Tools & Platforms
 
-| Category | Tools |
-|----------|-------|
-| Email Analysis | Custom EML Extractor (`eioc.py`), MXToolbox |
-| Threat Intelligence | VirusTotal, Cisco Talos, AbuseIPDB |
-| OSINT | WHOIS Lookup, Urlscan.io |
-| Linux Tools | Bash, grep, sha256sum |
-| Hashing | MD5, SHA-1, SHA-256 |
-| Reputation Services | IPInfo, AbuseIPDB, VirusTotal |
+Email Analysis
+
+- Custom EML Extractor (eioc.py)
+- MXToolbox
+
+Threat Intelligence
+
+- VirusTotal
+- Cisco Talos
+- AbuseIPDB
+
+OSINT
+
+- WHOIS
+- Urlscan.io
+- IPInfo
+
+Linux Utilities
+
+- Bash
+- grep
+- sha256sum
+
+Hashing
+
+- MD5
+- SHA-1
+- SHA-256
 
 ---
 
@@ -50,247 +75,150 @@ This repository showcases hands-on phishing investigations performed in a contro
 
 ```text
 Phishing-Email-Investigation-Lab/
+
 ├── README.md
+
 ├── Case_01_Header_Analysis_Chase/
 │   ├── Case_01_Report.md
 │   └── screenshots/
-│       ├── 01_phishing_email_body.png
-│       ├── 02_raw_email_headers.png
-│       ├── 03_mxtoolbox_header_analysis.png
-│       ├── 04_whois_ip_lookup.png
-│       ├── 05_abuseipdb_reputation.png
-│       └── 06_terminal_extracted_headers.png
-│
+
 ├── Case_02_Attachment_Analysis_ISO/
 │   ├── Case_02_Report.md
 │   └── screenshots/
-│       ├── 01_email_with_iso_attachment.png
-│       ├── 02_terminal_extracted_hashes.png
-│       ├── 03_virustotal_malware_detection.png
-│       └── 04_cisco_talos_threat_reputation.png
-│
+
 ├── Case_03_Malicious_PDF_Analysis/
 │   ├── Case_03_Report.md
 │   └── screenshots/
-│       ├── 01_amazon_pdf_lure_document.png
-│       ├── 02_terminal_sha256_hash.png
-│       └── 03_virustotal_pdf_detection.png
-│
+
 └── Case_04_Brand_Impersonation_URL_Amazon/
     ├── Case_04_Report.md
     └── screenshots/
-        ├── 01_amazon_prime_phishing_email.png
-        ├── 02_terminal_extracted_urls_headers.png
-        ├── 03_whois_google_ip_info.png
-        ├── 04_terminal_grep_extracted_domain.png
-        ├── 05_virustotal_url_detection.png
-        └── 06_urlscan_redirection_path.png
 ```
 
+
+
 ---
 
-# 📁 Investigation Cases
+🔎 Investigation Scenarios
 
-## Case 01 – Email Header Analysis (Chase)
+Case 01 — Email Header Analysis (Chase)
 
-### Investigation Focus
+Focus
 
 - Email Header Analysis
-- SPF/DKIM/DMARC Validation
-- SMTP Relay Analysis
+- SPF, DKIM & DMARC Validation
+- SMTP Path Analysis
 - Sender Infrastructure Verification
 
-### Skills Used
-
-- Email Header Parsing
-- Reverse IP Lookup
-- DMARC/SPF Verification
-- IOC Extraction
-
-### Tools Used
+Primary Tools
 
 - MXToolbox
+- WHOIS
 - AbuseIPDB
-- WHOIS Lookup
-- Linux Terminal (`eioc.py`)
-
-### Report
-
-- `Case_01_Header_Analysis_Chase/Case_01_Report.md`
-
-### Screenshots
-
-- 01_phishing_email_body.png
-- 02_raw_email_headers.png
-- 03_mxtoolbox_header_analysis.png
-- 04_whois_ip_lookup.png
-- 05_abuseipdb_reputation.png
-- 06_terminal_extracted_headers.png
+- eioc.py
 
 ---
 
-## Case 02 – Malicious ISO Attachment Analysis
+Case 02 — Malicious ISO Attachment
 
-### Investigation Focus
+Focus
 
 - Static Malware Analysis
-- File Hash Calculation
+- File Hash Verification
 - Threat Intelligence Correlation
-- Attachment Reputation Analysis
 
-### Skills Used
-
-- Malware Hashing
-- Threat Intelligence
-- IOC Extraction
-
-### Tools Used
+Primary Tools
 
 - sha256sum
 - VirusTotal
 - Cisco Talos
-- Python Script
-
-### Report
-
-- `Case_02_Attachment_Analysis_ISO/Case_02_Report.md`
-
-### Screenshots
-
-- 01_email_with_iso_attachment.png
-- 02_terminal_extracted_hashes.png
-- 03_virustotal_malware_detection.png
-- 04_cisco_talos_threat_reputation.png
 
 ---
 
-## Case 03 – Malicious PDF Analysis
+Case 03 — Malicious PDF Analysis
 
-### Investigation Focus
+Focus
 
-- PDF File Analysis
-- Hash Verification
-- Threat Intelligence Lookup
-- Social Engineering Detection
-
-### Skills Used
-
-- PDF Forensics
+- PDF Investigation
 - Hash Analysis
-- IOC Extraction
+- Threat Intelligence Validation
 
-### Tools Used
+Primary Tools
 
 - sha256sum
 - VirusTotal
 
-### Report
-
-- `Case_03_Malicious_PDF_Analysis/Case_03_Report.md`
-
-### Screenshots
-
-- 01_amazon_pdf_lure_document.png
-- 02_terminal_sha256_hash.png
-- 03_virustotal_pdf_detection.png
-
 ---
 
-## Case 04 – Brand Impersonation & URL Analysis (Amazon)
+Case 04 — Brand Impersonation & URL Investigation
 
-### Investigation Focus
+Focus
 
 - URL Extraction
-- Domain Analysis
-- URL Reputation Analysis
-- Redirection Chain Investigation
-
-### Skills Used
-
-- URL Analysis
 - Domain Investigation
-- Threat Intelligence
-- IOC Extraction
+- URL Reputation Analysis
+- Redirect Chain Analysis
 
-### Tools Used
+Primary Tools
 
-- grep
 - VirusTotal
 - WHOIS
 - Urlscan.io
-
-### Report
-
-- `Case_04_Brand_Impersonation_URL_Amazon/Case_04_Report.md`
-
-### Screenshots
-
-- 01_amazon_prime_phishing_email.png
-- 02_terminal_extracted_urls_headers.png
-- 03_whois_google_ip_info.png
-- 04_terminal_grep_extracted_domain.png
-- 05_virustotal_url_detection.png
-- 06_urlscan_redirection_path.png
+- grep
 
 ---
 
-# 🔍 Investigation Methodology
+🔄 Investigation Workflow
 
 1. Initial Email Review
 2. Evidence Collection
 3. Email Header Analysis
 4. IOC Extraction
 5. Threat Intelligence Correlation
-6. Reputation Analysis
+6. Malware / URL Analysis
 7. MITRE ATT&CK Mapping
 8. Risk Assessment
-9. Documentation & Reporting
+9. Incident Documentation
 
 ---
 
-# 📊 Skills Matrix
+📊 Investigation Coverage
 
-| Skill | Case 1 | Case 2 | Case 3 | Case 4 |
-|--------|:------:|:------:|:------:|:------:|
-| Email Header Analysis | ✅ | ✅ | ✅ | ✅ |
-| IOC Extraction | ✅ | ✅ | ✅ | ✅ |
-| Threat Intelligence | ✅ | ✅ | ✅ | ✅ |
-| WHOIS Analysis | ✅ |  |  | ✅ |
-| VirusTotal |  | ✅ | ✅ | ✅ |
-| URL Analysis |  |  | ✅ | ✅ |
-| Hash Analysis |  | ✅ | ✅ |  |
-| MITRE ATT&CK | ✅ | ✅ | ✅ | ✅ |
-| Report Writing | ✅ | ✅ | ✅ | ✅ |
+This lab includes practical investigations covering:
+
+- Email Header Spoofing
+- SPF, DKIM & DMARC Validation
+- Malicious ISO Attachments
+- Malicious PDF Attachments
+- Brand Impersonation
+- Credential Harvesting URLs
+- URL Reputation Analysis
+- Domain Investigation
+- Hash Analysis
+- IOC Extraction
+- Threat Intelligence Correlation
 
 ---
 
-# 📚 Key Learning Outcomes
+🎓 Key Learning Outcomes
 
-- Email authentication analysis (SPF, DKIM, DMARC)
-- IOC extraction and documentation
-- Static malware attachment analysis
-- PDF and phishing URL investigation
+- Email authentication verification
+- Phishing IOC identification
+- Static attachment analysis
+- URL and domain investigation
 - Threat intelligence correlation
-- Professional SOC-style incident reporting
+- Professional incident documentation
+- MITRE ATT&CK mapping
+- SOC investigation methodology
 
 ---
 
+👤 Author
 
-# 👤 Author
+Shaikh Sufiyan
 
-**Shaikh Sufiyan**
-  
- 
-- **LinkedIn:** https://www.linkedin.com/in/shaikh-sufiyan-aab51a3b1
-- **GitHub:** https://github.com/Sufiyan-SOC
-- **Email:**  shaikh.sufiyan.sec@gmail.com
+GitHub: https://github.com/Sufiyan-SOC
 
+LinkedIn: https://www.linkedin.com/in/shaikh-sufiyan-aab51a3b1
 
-
-
-
-
-
-
-
-
+Email: shaikh.sufiyan.sec@gmail.com
