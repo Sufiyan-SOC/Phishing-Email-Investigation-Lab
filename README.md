@@ -99,7 +99,7 @@ Phishing-Email-Investigation-Lab/
 
 ---
 
-🔎 Investigation Scenarios
+🔎 Investigation Cases
 
 Case 01 — Email Header Analysis (Chase)
 
